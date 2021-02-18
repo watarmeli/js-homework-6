@@ -8,4 +8,4 @@ const books = [
 const MIN_BOOK_RATING = 8;
 // Пиши код ниже этой строки
 
-const names = books.filter(book => book.rating > MIN_BOOK_RATING).sort((a, b) => a.author.localeCompare(b.author)).flatMap(book => book.author);
+const names = books.filter(book => book.rating > MIN_BOOK_RATING).flatMap(book => book.author).sort((a, b) => a.localeCompare(b));
